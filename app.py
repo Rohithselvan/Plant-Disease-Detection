@@ -316,7 +316,7 @@ def load_img():
     global COUNT
     return send_from_directory('static/img', "{}.jpg".format(COUNT-1))
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
+
 
